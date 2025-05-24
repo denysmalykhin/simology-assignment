@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card" id="profileCard">
+            <div class="avatar-container">
+                <div class="avatar" id="avatar">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=120&h=120&fit=crop&crop=face" 
+                         alt="User Avatar" 
+                         class="avatar-img"
+                         onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+                    <div class="avatar-fallback" id="avatar-fallback">
+                        <span class="avatar-initials">SJ</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user-info">
+                <h2 class="full-name">Sarah Johnson</h2>
+                <p class="username">@sarahjohnson</p>
+                <p class="bio">Frontend developer passionate about creating beautiful user experiences. Love coffee, coding, and creative design.</p>
+                <div class="location">
+                    <span class="location-icon">📍</span>
+                    <span class="location-text">San Francisco, CA</span>
+                </div>
+            </div>
+            
+            <button class="follow-btn" id="followBtn">Follow</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
